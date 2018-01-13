@@ -1,0 +1,190 @@
+@import "footer.css";
+@import "header.css";
+@import "base.css";
+
+/* font-family: 'Dorsa', sans-serif;
+font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+}
+.wrapper {
+    background-image: url("4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1.375rem 0;
+}
+
+.content::after {
+    content: "\f062";
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #38afe5;
+    position: fixed;
+    right: 2.5%;
+    bottom: 2%;
+    font-family: "FontAwesome", sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.content {
+    background-color: #ffffff;
+    width: 30rem;
+    margin: 0 auto;
+    padding: 2.313rem;
+}
+
+.content-caption {
+    color:  #263555;
+    font-family: 'Pathway Gothic One', sans-serif;
+    margin-bottom: 2rem;
+
+}
+.content-picture__item {
+    margin-bottom: 5rem;
+}
+.content-picture__item:last-child {
+    margin-bottom: 0;
+}
+.pricelist {
+    display: flex;
+    flex-direction: column;
+}
+.pricelist__pricetag {
+    color: #38afe5;
+    font-size: 1.141rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif; */
+    line-height: 1.041;
+}
+p {
+    font-size: 0.877rem;
+    line-height: 1.353rem;
+    font-family: 'Open Sans', sans-serif; */
+}
+h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+.pricelist__bottom {
+    width: 5.938rem;
+    height: 1.875rem;
+    border-radius: 7px;
+    border: 1px solid grey;
+    background-color:  #ffffff;
+    text-align: center;
+    line-height: 1.875rem;
+    color: black;
+    font-family: AppleGothic;
+    margin-top: 1rem;
+}
+.content-picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.browse-form {
+    margin-left: 4rem;
+}
+.browse-form__browse-item {
+    width: 16.69rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+}
+.browse-form__bottom{
+    width: 4rem;
+    height: 1.375rem;
+    border-radius: 7px;
+    border: 1px solid grey;
+    background-color:  #ffffff;
+    text-align: center;
+    line-height: 1.375rem;
+    color: black;
+    font-family: AppleGothic;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.browse-form__search-tour {
+    width: 11rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+}
+.search-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content-picture:nth-child(n+5){
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .content {
+        width: 50rem;
+    }
+    .content-picture:nth-child(n+5){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .content-mainblock {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .pricelist {
+        margin-left: 0.5rem;
+    }
+    .browse-form__browse-item {
+        width: 13rem;
+    }
+    .browse-form__search-tour {
+        width: 12rem;
+    }
+    .box1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .search-form:first-child {
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        width: 64rem;
+
+    }
+    .box1 {
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    .search-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .bigbox {
+        display: flex;
+        flex-direction: row;
+    }
+    .browse-form {
+        margin-left: 0;
+    }
+}

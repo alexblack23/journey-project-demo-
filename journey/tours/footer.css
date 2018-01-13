@@ -1,0 +1,126 @@
+.footer__top {
+    background-color: #2b425a;
+    padding: 1.875rem 0;
+}
+.bottom-menu__link {
+    display: block;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+.contact__text {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+.contact__info  {
+    font-family: Arial, sans-serif;
+    font-size: 0.625rem;
+    color: #ffffff;
+}
+.bottom-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+
+}
+.footer__bottom-menu{
+    margin-bottom: 1.625rem;
+
+}
+.bottom-menu__item {
+    flex-basis: 26%;
+    margin-bottom: 0.8125rem;
+}
+.bottom-menu__item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fa-mobile, .fa-envelope {
+    vertical-align: middle;
+    margin-right: 0.3125rem;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+
+}
+.footer__social {
+    margin:0 auto 0.8125rem;
+
+}
+.social__link {
+    width: 1.625rem;
+    height: 1.625rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height:1.625rem;
+    color: #dfab56;
+}
+.footer__bottom {
+    padding-top: 1.875rem;
+}
+.copyright {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 0.5265rem;
+    margin-bottom: 1rem;
+}
+/*media for 768*/
+
+@media (min-width: 768px) {
+    .footer__top {
+        display: flex;
+    }
+    .bottom-menu {
+        justify-content: space-evenly;
+        flex-grow: 0.5;
+    }
+    .footer__bottom-menu {
+        margin-bottom: 0;
+    }
+    .contact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact__text {
+        margin-bottom: 0.75rem;
+
+    }
+    .contact__info {
+        margin-bottom: 0.75rem;
+    }
+    .fa-mobile, .fa-envelope {
+        display: none;
+    }
+    .social__link {
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .copyright {
+        font-size: 0.75rem;
+    }
+    .footer__social {
+        margin-bottom: 1.563rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .bottom-menu__item {
+        text-align: center;
+    }
+
+}
